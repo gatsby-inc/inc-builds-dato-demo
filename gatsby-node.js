@@ -1,31 +1,28 @@
-const path = require(`path`)
-const { createFilePath } = require(`gatsby-source-filesystem`)
+const path = require(`path`);
+const { createFilePath } = require(`gatsby-source-filesystem`);
 
-exports.createPages = ({ graphql, actions }) => {
-  const { createPage } = actions
+exports.createPages = async ({ graphql, actions }) => {
+  const { createPage } = actions;
 
-  return new Promise((resolve, reject) => {
-    graphql(`
-      {
-        allDatoCmsWork {
-          edges {
-            node {
-              slug
-            }
-          }
+  const result = await graphql(`
+    {
+      allDatoCmsBlogPost {
+        nodes {
+          id
+          slug
         }
       }
-    `).then(result => {
-      result.data.allDatoCmsWork.edges.map(({ node: work }) => {
-        createPage({
-          path: `works/${work.slug}`,
-          component: path.resolve(`./src/templates/work.js`),
-          context: {
-            slug: work.slug,
-          },
-        })
-      })
-      resolve()
-    })
-  })
-}
+    }
+  `);
+  console.log(result)
+
+  result.data.allDatoCmsBlogPost.nodes.map(({ id, slug }) => {
+    createPage({
+      path: `works/${slug}`,
+      component: path.resolve(`./src/templates/work.js`),
+      context: {
+        id
+      }
+    });
+  });
+};

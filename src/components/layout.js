@@ -12,6 +12,9 @@ const TemplateWrapper = ({ children }) => {
     <StaticQuery
       query={graphql`
         query LayoutQuery {
+          allDatoCmsBlogPost {
+            totalCount
+          }
           datoCmsSite {
             globalSeo {
               siteName
@@ -52,6 +55,9 @@ const TemplateWrapper = ({ children }) => {
               <h6 className="sidebar__title">
                 <Link to="/">{data.datoCmsSite.globalSeo.siteName}</Link>
               </h6>
+              <h7 className="sidebar__count">
+                {data.allDatoCmsBlogPost.totalCount} posts
+              </h7>
               <div
                 className="sidebar__intro"
                 dangerouslySetInnerHTML={{
@@ -75,7 +81,7 @@ const TemplateWrapper = ({ children }) => {
                     target="blank"
                     className={`social social--${profile.profileType.toLowerCase()}`}
                   >
-                    {" "}
+                    {profile.profileType}
                   </a>
                 ))}
               </p>
@@ -88,8 +94,8 @@ const TemplateWrapper = ({ children }) => {
             <div className="container__mobile-header">
               <div className="mobile-header">
                 <div className="mobile-header__menu">
-                  <a
-                    href="#"
+                  <button
+                    aria-label="Show menu"
                     onClick={e => {
                       e.preventDefault();
                       setShowMenu(!showMenu);
