@@ -14,7 +14,6 @@ exports.createPages = async ({ graphql, actions }) => {
       }
     }
   `);
-  console.log(result)
 
   result.data.allDatoCmsBlogPost.nodes.map(({ id, slug }) => {
     createPage({

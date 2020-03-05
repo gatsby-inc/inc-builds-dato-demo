@@ -5,7 +5,6 @@ import Img from "gatsby-image";
 import Layout from "../components/layout";
 
 const IndexPage = ({ data }) => {
-  console.log(data.datoCmsAsset.fluid)
   return (
     <Layout>
       <Masonry className="showcase">
@@ -21,7 +20,7 @@ const IndexPage = ({ data }) => {
                 </h6>
                 <div className="card__description">
                   <p>
-                    {work.excerpt} <em>1</em>
+                    {work.excerpt}
                   </p>
                 </div>
               </figcaption>
