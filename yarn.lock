@@ -818,6 +818,25 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
+"@gatsbyjs/gatsby-source-datocms@^2.2.0":
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/@gatsbyjs/gatsby-source-datocms/-/gatsby-source-datocms-2.2.0.tgz#314dc88355155d55583ed768106eb7521734cbca"
+  integrity sha512-9/vyM/vEy25abpcIJHlW6Ob6EYraN5pvgt/Lke1NDI97Dq7tMWdHpeAnNeuS/kdHmS3unidbVEPYTF3UWHl8/A==
+  dependencies:
+    core-js "^3.2.1"
+    datocms-client ">=3.0.16"
+    fs-extra ">=8.1.0"
+    humps ">=2.0.1"
+    imgix-url-params "11.2.0"
+    json-stringify-safe ">=5.0.1"
+    md5 "2.2.1"
+    object-assign "^4.1.1"
+    object.entries "^1.1.0"
+    promise-queue "2.2.5"
+    query-string "6.8.3"
+    regenerator-runtime "^0.13.3"
+    request-promise-native "1.0.7"
+
 "@hapi/address@2.x.x":
   version "2.1.4"
   resolved "https://registry.yarnpkg.com/@hapi/address/-/address-2.1.4.tgz#5d67ed43f3fd41a69d4b9ff7b56e7c0d1d0a81e5"
@@ -5108,25 +5127,6 @@ gatsby-react-router-scroll@^2.1.23:
     "@babel/runtime" "^7.7.6"
     scroll-behavior "^0.9.10"
     warning "^3.0.0"
-
-gatsby-source-datocms@^2.1.28:
-  version "2.1.28"
-  resolved "https://registry.yarnpkg.com/gatsby-source-datocms/-/gatsby-source-datocms-2.1.28.tgz#fb60fc8247d5081af7e3b332225512050020467d"
-  integrity sha512-Ickb67+EbrgeZGQpn1CxzY5M2qDJ/qm5U0DA8mxQhrfwZM3/a5nxVWZCHpGn6XIlvtKXpfCId+q/FR18Skv+MA==
-  dependencies:
-    core-js "^3.2.1"
-    datocms-client ">=3.0.16"
-    fs-extra ">=8.1.0"
-    humps ">=2.0.1"
-    imgix-url-params "11.2.0"
-    json-stringify-safe ">=5.0.1"
-    md5 "2.2.1"
-    object-assign "^4.1.1"
-    object.entries "^1.1.0"
-    promise-queue "2.2.5"
-    query-string "6.8.3"
-    regenerator-runtime "^0.13.3"
-    request-promise-native "1.0.7"
 
 gatsby-source-filesystem@^2.1.54:
   version "2.1.54"
