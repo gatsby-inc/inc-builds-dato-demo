@@ -1,12 +1,12 @@
-import React from "react";
-import Slider from "react-slick";
-import { HelmetDatoCms } from "gatsby-source-datocms";
-import Img from "gatsby-image";
-import { graphql } from "gatsby";
-import Layout from "../components/layout";
+import React from 'react'
+import Slider from 'react-slick'
+import { HelmetDatoCms } from '@gatsbyjs/gatsby-source-datocms'
+import Img from 'gatsby-image'
+import { graphql } from 'gatsby'
+import Layout from '../components/layout'
 
 export default ({ data }) => {
-  const { title, excerpt, descriptionNode } = data.datoCmsBlogPost;
+  const { title, excerpt, descriptionNode } = data.datoCmsBlogPost
 
   return (
     <Layout>
@@ -27,8 +27,8 @@ export default ({ data }) => {
         </div>
       </article>
     </Layout>
-  );
-};
+  )
+}
 
 export const query = graphql`
   query WorkQuery($id: String!) {
@@ -48,4 +48,4 @@ export const query = graphql`
       }
     }
   }
-`;
+`
