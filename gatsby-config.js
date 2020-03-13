@@ -1,8 +1,12 @@
-require('dotenv').config()
+require('dotenv').config({
+  path: `.env.${process.env.NODE_ENV}`
+})
+
+const isProd = process.env.NODE_ENV === 'production'
 
 module.exports = {
   siteMetadata: {
-    title: `Creative Portfolio`,
+    title: `Creative Portfolio`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -11,8 +15,9 @@ module.exports = {
     {
       resolve: `gatsby-source-datocms`,
       options: {
-        apiToken: process.env.DATO_API_TOKEN,
-      },
-    },
-  ],
+        disableLiveReload: isProd,
+        apiToken: process.env.DATO_API_TOKEN
+      }
+    }
+  ]
 }

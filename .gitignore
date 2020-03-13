@@ -8,3 +8,5 @@ public/
 yarn-error.log
 .env
 .inc-builds
+.env.development
+.env.production
