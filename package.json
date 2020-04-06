@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "author": "Stefano Verna <s.verna@datocms.com>",
   "dependencies": {
-    "@gatsbyjs/gatsby-source-datocms": "^2.2.1",
+    "@gatsbyjs/gatsby-source-datocms": "^2.2.2",
     "dotenv": "^8.1.0",
     "gatsby": "^2.20.8",
     "gatsby-image": "^2.3.1",
