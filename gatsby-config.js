@@ -13,7 +13,7 @@ module.exports = {
     `gatsby-plugin-sass`,
     `gatsby-transformer-remark`,
     {
-      resolve: `@gatsbyjs/gatsby-source-datocms`,
+      resolve: `gatsby-source-datocms`,
       options: {
         disableLiveReload: isProd,
         apiToken: process.env.DATO_API_TOKEN
