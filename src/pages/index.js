@@ -8,6 +8,7 @@ const IndexPage = ({ data }) => {
   return (
     <Layout>
       <Masonry className="showcase">
+      <div className="showcase__item"><h2>1 – 25 of ${data.allDatoCmsBlogPost.totalCount} posts</h2></div>
         {data.allDatoCmsBlogPost.nodes.map(work => (
           <div key={work.id} className="showcase__item">
             <figure className="card">
