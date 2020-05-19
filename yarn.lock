@@ -5510,10 +5510,10 @@ gatsby-transformer-remark@^2.8.8:
     unist-util-select "^1.5.0"
     unist-util-visit "^1.4.1"
 
-gatsby@2.19.50-state-machine.63:
-  version "2.19.50-state-machine.63"
-  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.19.50-state-machine.63.tgz#39f07710b4c5327a6762b1d12dc08bf011856eb5"
-  integrity sha512-v8IYcRmmWfvG7VODcXvt6517b07YbEdI+ziUnH5LOrJrcLDp+Cqb/wkOmDbM+vkQJupMVvTT95CJWn8mE3JagA==
+gatsby@^2.19.50-state-machine.64:
+  version "2.19.50-state-machine.64"
+  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.19.50-state-machine.64.tgz#0bb26ee412041a81a1a4fc75f98120c36e4a2b6e"
+  integrity sha512-T92EIO+71hO/yRuwfa5AFCZ4FuOdXGJd+fMxpcU39klJL2yXOM3JERFoUGLSt3d0V/HjO6UEsrLeF26FqH6cjQ==
   dependencies:
     "@babel/code-frame" "^7.8.3"
     "@babel/core" "^7.9.6"
