@@ -4,7 +4,7 @@ const component = path.resolve(`./src/templates/work.js`);
 let count = 0;
 exports.onCreateNode = ({ node, actions }) => {
   if (node && node.internal && node.internal.type === "DatoCmsBlogPost") {
-    if (count++ % 100 === 0) {
+    if (++count % 1000 === 0) {
       console.log(`Page ${count}`);
     }
     actions.createPage({
